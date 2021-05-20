@@ -23,8 +23,9 @@
 
                         <ul class="about">
                             <li>
-                                <i class="glyphicon glyphicon-map-marker"></i>
-                                <span class="span-info"> Address: </span>
+                                <span class=span-info>
+                                    <i class="glyphicon glyphicon-map-marker"></i>Address:
+                                </span>
                                 <span class="value">
 
                                     <body class="line">
@@ -35,12 +36,12 @@
                             </li>
 
                             <li>
-                                <li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i> Email:</span>
+                            <li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i> Email:</span>
 
-                                    <body class="line">
-                                        {{ site.email }}
-                                    </body>
-                                </li>
+                                <body class="line">
+                                    {{ site.email }}
+                                </body>
+                            </li>
 
                             <li><span class="span-info"><i class="glyphicon glyphicon-phone"></i> Phone:</span>
 
@@ -48,10 +49,13 @@
                                     {{ site.phone }}
                                 </body>
                             </li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-globe"></i> Website:</span>
+                            <li>
+                                <span class="span-info">
+                                    <i class="glyphicon glyphicon-globe"></i> Website:
+                                </span>
                                 <a href="{{site.url$baseurl}}">
 
-                                    <body>
+                                    <body class="line">
                                         {{ site.url }}{{ site.baseurl }}
                                     </body>
                                 </a>
