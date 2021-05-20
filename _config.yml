@@ -1,8 +1,7 @@
 
 title: My Resume
-url: 'http://hansyao.github.io'
+url: http://hansyao.github.io
 baseurl: '/myresume' #change it according to your repository name
-
 
 
 # Profile information
@@ -15,8 +14,9 @@ location: Shanghai, China
 facebook: http://www.facebook.com  ## your facebook account url
 twitter: http://www.twitter.com  ## your twitter account url
 linkedin: http://www.linkedin.com  ## your linkedin account url
-dribbble: http://www.dribble.com  ## you dribbble account url
+# dribbble: http://hansyao.github.io  ## you dribbble account url
 foursquare: http://www.foursquare.com  ## your foursquare account url
+myblog: https://hansyao.github.io ## your blog url
 
 
 

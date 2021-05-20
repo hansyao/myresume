@@ -52,10 +52,15 @@
             <li>
                 <i class="glyphicon glyphicon-globe"></i>
                 <label>Website</label>
-                <span class="value"><a href="#" target="_blank">hansyao.github.io</a></span>
+                <span class="value">
+                    <a href="{{site.url$baseurl}}" target="_blank"> 
+                        <body class="line">
+                            {{ site.url }}{{ site.baseurl }} 
+                        </body>
+                    </a>
+                </span>
                 <div class="clear"></div>
             </li>
-
         </ul>
 
 
