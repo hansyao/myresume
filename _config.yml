@@ -8,6 +8,14 @@ baseurl: '/myresume' #change it according to your repository name
 yourname: Hans Yao  ## put your name
 title: 'Finance Manager &amp; Software Enginner'  ## your title
 location: Shanghai, China
+dateofbirthday: Jun 27, 1977
+address: 41-902, 1028 Xiuyang Road, Pudong, Shanghai, China
+email: hansyow@gmail.com
+phone: +1(857)288-8870
+skype: hans.yao
+gdrive: hansyow@gmail.com
+skydrive: hansyow@gmail.com
+wechat: hans1977
 
 
 ## Social Profiles
