@@ -2,14 +2,19 @@
 <div id="blog" class="content_2">
     <h1 class="h-bloc">Blog - My Blog</h1><br> 
 
-    <div class="col-md-12">
+    <div class="iframe-container">
 
-        <div style="width: 693px; height: 1300px; margin: 0 0 0 0 0;">
+        <!-- <div style="width: 693px; height: 1300px; margin: 0 0 0 0 0;">
             <iframe id="iframeContent"
                 width="680" height="1300" scrolling="yes" src="https://hansyao.github.io/">
             </iframe>
-        </div>
-    
+        </div> -->
+ 
+        <div class="iframe-container" >
+            <iframe title={`${title} ${type}`} src="https://hansyao.github.io/" >
+            </iframe>
+        </div>       
+
     </div>
 </div>
 <!-- End .blog -->
