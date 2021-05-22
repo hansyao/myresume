@@ -305,8 +305,8 @@ jQuery(document).ready(function ($) {
     function initialize() {
         map = new GMaps({
             div: '#map',
-            lat: -37.817917,
-            lng: 144.965065,
+            lat: 31.132193301555073,
+            lng: 121.57718055197236,
             zoom: 16
 
         });
