@@ -234,25 +234,12 @@
 
     </div>
      <!-- /.resume-right -->
-     <!-- <div id="customizedMD"></div>
-     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
-     <script>
-       document.getElementById('customizedMD').innerHTML =
-         marked(`{% include /cv.md %}`)
-     </script>  -->
      
      <!-- .resume-left -->
-    <div id="customizedMD">
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-        <script>         
-            document.getElementById('customizedMD').innerHTML =
-            marked(`{% include /cv.md %}`);
-        </script>
-        <!-- .title_content -->
-        <!-- <body> <header src="cv"></body> </h1> -->
-        <!-- <div w3-include-html="cv"></div>         -->
-        
-    </div>
+     <div class="col-md-6 resume-left"> 
+        <div w3-include-html=cv> </div>
+        <!-- <div id="customizedCV"></div> -->
+     </div>
     <!-- /.resume-left -->
 </div>
 

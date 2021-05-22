@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Markdown - LaTex渲染的说明和测试
-permalink: /math-test/
+permalink: /math_test/
 ---
 
 LaTeX渲染已经在全站头部文件引入，可以直接使用，公式块上下使用`$$`标明，内联公式则用`$`. 

@@ -8,7 +8,7 @@
 
 <!-- Js | jquery.cycle -->
 <!-- Credits: https://github.com/malsup/cycle2 -->
-<script type="text/javascript" src="assets/js/jquery.cycle2.min.js"></script>
+<!-- <script type="text/javascript" src="assets/js/jquery.cycle2.min.js"></script> -->
 
 <!-- jquery | rotate and portfolio -->
 <!-- Credits: http://jquery.com -->
@@ -116,6 +116,26 @@
   });
 </script>
 
+<!-- <script>
+  function load(name) {
+    let xhr = new XMLHttpRequest(),
+        okStatus = document.location.protocol === "file:" ? 0 : 200;
+    xhr.open('GET', name, false);
+    xhr.overrideMimeType("text/html;charset=utf-8");//默认为utf-8
+    xhr.send(null);
+    return xhr.status === okStatus ? xhr.responseText : null;
+  }
+  let letter = load("letter");
+  let cv = load("cv");
+  let math_test=("math_test")
+</script>
+ 
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>         
+    document.getElementById('customizedletter').innerHTML = marked(letter);        
+    document.getElementById('customizedCV').innerHTML = marked(cv);
+    document.getElementById('customizedmath').innerHTML = marked(math_test);
+</script> -->
 
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
