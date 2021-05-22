@@ -1,15 +1,41 @@
 <!-- .blog -->
+<link href="//cdn.bootcss.com/skeleton/2.0.4/skeleton.css" rel="stylesheet">
 <div id="blog" class="content_2">
-    <h1 class="h-bloc" > Blog - My Blog
-        <a href="{{site.myblog}}" >
+    <h1 class="h-bloc"> Blog - My Blog
+        <a href="{{site.myblog}}">
             <span class="fa fa-myblog"></span>
         </a>
+
     </h1>
-           
-    <div class="iframe-container">
-        <iframe id="iframeContent" scrolling="yes" src="{{site.myblog}}" >
-        </iframe>
-    </div>       
+    
+    <!-- <iframe allowtransparency="true" style="background: hsl(0, 0%, 100%);" 
+        src="./math-test" frameborder="0">
+    </iframe> -->
+
+    <!-- <div> -->
+        <!-- {% highlight markdown %}
+        {% include test.md %}
+        {% endhighlight %} -->
+    <!-- <h1  w3-include-html="math-test"></h1>
+    <div class="clear"></div> -->
+    <!-- </div> -->
+
+    <div id="customizedMD1">
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>         
+            document.getElementById('customizedMD1').innerHTML =
+            marked(`{% include /letter.md %}`);
+        </script>
+    </div>
+
+    
+    <!-- <div>
+        <div id="content"></div>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
+        <script>
+          document.getElementById('content').innerHTML = marked(`{% include /test.md %}`);
+        </script> 
+    </div> -->
 
 </div>
 <!-- End .blog -->

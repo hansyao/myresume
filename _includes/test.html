@@ -1,0 +1,9 @@
+<body>
+  <div id="customizedMD"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
+  <script>
+    document.getElementById('customizedMD').innerHTML =
+      marked(`{% include /cv.md %}`)
+  </script> 
+</body>
+

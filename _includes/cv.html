@@ -234,82 +234,23 @@
 
     </div>
      <!-- /.resume-right -->
-     
-     
+     <!-- <div id="customizedMD"></div>
+     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
+     <script>
+       document.getElementById('customizedMD').innerHTML =
+         marked(`{% include /cv.md %}`)
+     </script>  -->
      
      <!-- .resume-left -->
-    <div class="col-md-6 resume-left">    
+    <div id="customizedMD">
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>         
+            document.getElementById('customizedMD').innerHTML =
+            marked(`{% include /cv.md %}`);
+        </script>
         <!-- .title_content -->
-        <div class="title_content" style="margin-bottom:5px">
-            <div class="text_content">Experience</div>
-            <div class="clear"></div>
-        </div>
-        <!-- /.title_content -->
-        
-        <!-- .attributes -->
-        <ul class="attributes">
-            <li class="first">
-                <h5>Web Developer <span class="duration"><i class="fa fa-calendar color"></i> 2011 - 2013</span></h5>
-                <h6><span class="fa fa-briefcase"></span> Name of Company</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
-            </li>
-            <li>
-                <h5>Front-End Developer <span class="duration"><i class="fa fa-calendar color"></i> 2010 - 2011</span></h5>
-                <h6><span class="fa fa-briefcase"></span> Name of Company</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
-            </li>
-
-        </ul>
-        <!-- /.attributes -->
-        <br>
-        
-        <!-- .title_content -->
-        <div class="title_content">
-            <div class="text_content">Education</div>
-            <div class="clear"></div>
-        </div>
-        <!-- /.title_content -->
-        
-        <!-- .attributes -->
-        <ul class="attributes">
-            <li class="first">
-                <h5>Master of Engineering <span class="duration"><i class="fa fa-calendar color"></i> 2011 - 2013</span></h5>
-                <h6><span class="fa fa-book"></span> Name of University</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
-            </li>
-            <li>
-                <h5>Bachelor of Engineering <span class="duration"><i class="fa fa-calendar color"></i> 2010 - 2011</span></h5>
-                <h6><span class="fa fa-book"></span> Name of University</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
-            </li>
-        </ul>
-        <!-- /.attributes -->
-        <br>  
-        
-        
-          <!-- .title_content -->
-        <div class="title_content">
-            <div class="text_content">Awards</div>
-            <div class="clear"></div>
-        </div>
-        <!-- /.title_content -->
-        
-        <!-- .attributes -->
-        <ul class="attributes">
-            <li class="first">
-                <h5>Graphic &amp; Art Direction <span class="duration"><i class="fa fa-calendar color"></i> 2013 - 2014</span></h5>
-                <h6><span class="fa fa-trophy"></span> Name of Institute</h6>
-                <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
-            </li>
-            <li>
-                <h5>Design &amp; Art Direction <span class="duration"><i class="fa fa-calendar color"></i> 2012 - 2013</span></h5>
-                <h6><span class="fa fa-trophy"></span> Name of Institute</h6>
-                <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
-            </li>
-  
-        </ul>
-        <!-- /.attributes -->
-        <br>  
+        <!-- <body> <header src="cv"></body> </h1> -->
+        <!-- <div w3-include-html="cv"></div>         -->
         
     </div>
     <!-- /.resume-left -->

@@ -4,26 +4,25 @@ document.write("<script type='text/javascript'  src='assets/js/jsSwitcher/jquery
  /* Styles Switcher
  -----------------------------------------------------------------------------------*/
 
-window.console = window.console || (function() {
+window.console = window.console || (function () {
     var c = {};
-    c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile = c.clear = c.exception = c.trace = c.assert = function() {
-    };
+    c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile = c.clear = c.exception = c.trace = c.assert = function () {};
     return c;
 })();
 
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
 
     // layout Type				
     if ($.cookie('bg_type') != null) {
-        
-        if ($.cookie('bg_type') == 'bg_color'){
+
+        if ($.cookie('bg_type') == 'bg_color') {
             $('#s1').attr('checked', true);
-			$("#cb_slideshow" ).css("display", "none");
-		}else{
+            $("#cb_slideshow").css("display", "none");
+        } else {
             $('#s2').attr('checked', true);
-			$("#cb_slideshow" ).css("display", "block" );
-		}
+            $("#cb_slideshow").css("display", "block");
+        }
     }
 
     // type profile				
@@ -67,61 +66,61 @@ jQuery(document).ready(function($) {
 
     // Custumize Color
 
-    $(".gray").click(function() {
+    $(".gray").click(function () {
         $("#colors-style").attr("href", "assets/css/colors/gray.css");
         $.cookie('layout_color', 'assets/css/colors/gray.css');
         return false;
     });
 
-    $(".green").click(function() {
+    $(".green").click(function () {
         $("#colors-style").attr("href", "assets/css/colors/green.css");
         $.cookie('layout_color', 'assets/css/colors/green.css');
         return false;
     });
 
-    $(".blue").click(function() {
+    $(".blue").click(function () {
         $("#colors-style").attr("href", "assets/css/colors/blue.css");
         $.cookie('layout_color', 'assets/css/colors/blue.css');
         return false;
     });
 
-    $(".red").click(function() {
+    $(".red").click(function () {
         $("#colors-style").attr("href", "assets/css/colors/red.css");
         $.cookie('layout_color', 'assets/css/colors/red.css');
         return false;
     });
 
-    $(".yellow").click(function() {
+    $(".yellow").click(function () {
         $("#colors-style").attr("href", "assets/css/colors/yellow.css");
         $.cookie('layout_color', 'assets/css/colors/yellow.css');
         return false;
     });
 
-    $(".DarkBlue").click(function() {
+    $(".DarkBlue").click(function () {
         $("#colors-style").attr("href", "assets/css/colors/DarkBlue.css");
         $.cookie('layout_color', 'assets/css/colors/DarkBlue.css');
         return false;
     });
 
-    $(".orange").click(function() {
+    $(".orange").click(function () {
         $("#colors-style").attr("href", "assets/css/colors/orange.css");
         $.cookie('layout_color', 'assets/css/colors/orange.css');
         return false;
     });
 
-    $(".rose").click(function() {
+    $(".rose").click(function () {
         $("#colors-style").attr("href", "assets/css/colors/rose.css");
         $.cookie('layout_color', 'assets/css/colors/rose.css');
         return false;
     });
 
-    $(".lightseagreen").click(function() {
+    $(".lightseagreen").click(function () {
         $("#colors-style").attr("href", "assets/css/colors/lightseagreen.css");
         $.cookie('layout_color', 'assets/css/colors/lightseagreen.css');
         return false;
     });
 
-    $(".darkolivegreen").click(function() {
+    $(".darkolivegreen").click(function () {
         $("#colors-style").attr("href", "assets/css/colors/darkolivegreen.css");
         $.cookie('layout_color', 'assets/css/colors/darkolivegreen.css');
         return false;
@@ -133,7 +132,7 @@ jQuery(document).ready(function($) {
 
 
     //radio layout	
-    $("#r1").on('change', function() {
+    $("#r1").on('change', function () {
         $("#pic_prof_1").css('display', 'block');
         $("#pic_prof_2").css('display', 'none');
 
@@ -141,7 +140,7 @@ jQuery(document).ready(function($) {
         return false;
     });
 
-    $("#r2").on('change', function() {
+    $("#r2").on('change', function () {
         $("#pic_prof_2").css('display', 'block');
         $("#pic_prof_1").css('display', 'none');
 
@@ -153,13 +152,13 @@ jQuery(document).ready(function($) {
 
     //radio layout	
 
-    $("#s1").on('change', function() {
+    $("#s1").on('change', function () {
         $("#cb_slideshow").css("display", "none");
         $.cookie('bg_type', 'bg_color');
         return false;
     });
-	
-	$("#s2").on('change', function() {
+
+    $("#s2").on('change', function () {
         $("#cb_slideshow").css("display", "block");
         $.cookie('bg_type', 'bg_slider');
         return false;
@@ -171,7 +170,7 @@ jQuery(document).ready(function($) {
         left: '-270px'
     });
 
-    $('#custumize-style h2 a').click(function(e) {
+    $('#custumize-style h2 a').click(function (e) {
         e.preventDefault();
         var div = $('#custumize-style');
         console.log(div.css('left'));
@@ -196,7 +195,7 @@ jQuery(document).ready(function($) {
         }
     })
 
-    $('.bg li a').click(function(e) {
+    $('.bg li a').click(function (e) {
         e.preventDefault();
         $(this).parent().parent().find('a').removeClass('active');
         $(this).addClass('active');
@@ -208,7 +207,7 @@ jQuery(document).ready(function($) {
 
     })
 
-    $('#bgsolid li a').click(function(e) {
+    $('#bgsolid li a').click(function (e) {
         e.preventDefault();
         $(this).parent().parent().find('a').removeClass('active');
         $(this).addClass('active');
@@ -219,7 +218,7 @@ jQuery(document).ready(function($) {
 
     })
 
-    $('#button-reset a').click(function(e) {
+    $('#button-reset a').click(function (e) {
         var bg = '#717171';
         $('body').css('backgroundColor', '#717171').css('backgroundImage', 'none');
         $.cookie('layout_bgColors', bg);
