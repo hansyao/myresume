@@ -8,13 +8,13 @@
 
         <div class="col-lg-12">
             <div id="map"></div>
-        </div>  
+        </div>
 
         <div class="col-lg-12">
             <div class="row" id="title_content">
                 <div class="col-md-5">
                     <div class="contact-info">
-                        <!--<h3 class="main-heading"><span>Contact info</span></h3>-->
+                        <!-- <h3 class="main-heading"><span>Contact info</span></h3> -->
 
                         <div class="title_content" style="float: none;">
                             <div class="text_content">Contact info</div>
@@ -96,12 +96,10 @@
                         <a href={{site.facebook}}><i class="fa fa-facebook"></i></a>
                         <a href={{site.twitter}}><i class="fa fa-twitter"></i></a>
                         <a href={{site.linkedin}}><i class="fa fa-linkedin"></i></a>
-                        <a href={{site.foursquare}}><i class="fa fa-foursquare"></i></a>
+                        <!-- <a href={{site.foursquare}}><i class="fa fa-foursquare"></i></a> -->
                         <a href={{site.myblog}}><i class="fa fa fa-myblog"></i></a>
                         <div class="clear"></div>
                     </div>
-
-
 
                 </div>
 
@@ -111,40 +109,66 @@
                         <div class="text_content">Let's keep in touch</div>
                         <div class="clear"></div>
                     </div>
-
                     <div class="contact-form">
                         <!--<h3 class="main-heading"><span>Let's keep in touch</span></h3>-->
-
-
-
                         <div id="contact-status"></div>
+                        <form class="gform pure-form pure-form-stacked" method="POST" data-email="hansyow@gmail.com"
+                            data-cfasync="false"
+                            action="https://script.google.com/macros/s/AKfycbzEWUMIp7dxXScbNeP3nuqmrwja_7tVDctVkCmB/exec">
+                            <!-- change the form action to your script url -->
+                            <div class="form-elements">
+                                <p class="form-group" id="contact-name">
 
-                        <form action="#" id="contactform">
-                            <p class="form-group" id="contact-name">
-                                <label for="name">Your Name</label>
-                                <input type="text" name="name" class="form-control name-contact" id="inputSuccess"
-                                    placeholder="Name..." />
-                            </p>
-                            <p class="form-group" id="contact-email">
-                                <label for="email">Your Email</label>
-                                <input type="text" name="email" class="form-control email-contact" id="inputSuccess2"
-                                    placeholder="Email..." />
-                            </p>
+                                    <label for="name" class=span-info><i class="glyphicon glyphicon-user"></i> Your
+                                        Name</label>
 
-                            <p class="form-group" id="contact-message">
-                                <label for="message">Your Message</label>
-                                <textarea name="message" cols="88" rows="6" class="form-control message-contact"
-                                    id="inputError" placeholder="Message..."></textarea>
-                            </p>
-                            <input type="reset" name="reset" value="CLEAR" class="reset">
-                            <!-- <input type="submit" name="submit" value="SEND MESSAGE" class="submit">-->
+                                    <input type="text" name="name" class="form-control name-contact" id="name"
+                                        placeholder="Name..." />
+                                </p>
+                                <p class="form-group" id="contact-email">
 
-                            <section class="button-demo" style="display: inline-block;">
-                                <button class="ladda-button submit send_email" name="submit" data-color="green"
-                                    data-style="expand-left">SEND MESSAGE</button>
-                            </section>
+                                    <label for="email" class=span-info><i class="glyphicon glyphicon-envelope"></i>Your
+                                        Email</label>
 
+                                    <input type="email" name="email" class="form-control email-contact" id="email"
+                                        value="" required placeholder="your.name@email.com" />
+                                </p>
+                                <p class="form-group" id="contact-message">
+
+                                    <label for="message" class=span-info><i class="glyphicon glyphicon-comment"></i>
+                                        Your
+                                        Message</label>
+
+                                    <textarea name="message" cols="88" rows="3" class="form-control message-contact"
+                                        id="message" placeholder="Message..."></textarea>
+                                </p>
+                                <p class="hidden">
+                                    <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden
+                                        text field; must be empty to submit the form! Otherwise, we assume the user is a
+                                        spam bot.</label>
+                                    <input id="honeypot" type="text" name="honeypot" class="form-control" value="" />
+                                </p>
+                                <button type="reset" name="reset" class="reset"><i class="glyphicon glyphicon-remove"></i>&nbsp;CLEAR</button>
+                                <!-- <button type="submit" value="submit" class="ladda-button submit send_email" data-color="green" data-style="expand-left">
+                                    SEND MESSAGE</button> -->
+
+                                <!-- <input type="submit" name="submit" value="SEND MESSAGE" class="submit"> -->
+
+                                <!-- <section class="button-demo" style="display: inline-block;">
+                                    <button class="ladda-button submit send_email" data-color="green"
+                                        data-style="expand-left">SEND MESSAGE</button>
+                                </section> -->
+                                <button class="ladda-button submit send_email">
+                                    <i class="glyphicon glyphicon-envelope"></i>&nbsp;Send</button>
+
+                            </div>
+                            <!-- Customise the Thankyou Message People See when they submit the form: -->
+                            <div class="thankyou_message" style="display:none;">
+                                <p><em>Thanks</em> for contacting us!
+                                    We will get back to you soon!</p>
+                            </div>
                         </form>
+
                     </div>
                     <!-- /Contact Form -->
                 </div>
