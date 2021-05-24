@@ -111,7 +111,7 @@
                     <div class="contact-form">
                         <!--<h3 class="main-heading"><span>Let's keep in touch</span></h3>-->
                         <div id="contact-status"></div>
-                        <form class="gform pure-form pure-form-stacked" method="POST" data-email="hansyow@gmail.com"
+                        <form id=contactform class="gform pure-form pure-form-stacked"  method="POST" data-email="hansyow@gmail.com"
                             data-cfasync="false"
                             action="https://script.google.com/macros/s/AKfycbzEWUMIp7dxXScbNeP3nuqmrwja_7tVDctVkCmB/exec">
                             <!-- change the form action to your script url -->
@@ -138,7 +138,7 @@
                                         Your
                                         Message</label>
 
-                                    <textarea name="message" cols="88" rows="3" class="form-control message-contact"
+                                    <textarea name="message" cols="88" rows="8" class="form-control message-contact"
                                         id="message" placeholder="Message..."></textarea>
                                 </p>
                                 <p class="hidden">
@@ -147,8 +147,8 @@
                                         spam bot.</label>
                                     <input id="honeypot" type="text" name="honeypot" class="form-control" value="" />
                                 </p>
-                                <button type="reset" class="ladda-button submit"><i
-                                        class="glyphicon glyphicon-remove"></i>&nbsp;CLEAR</button>
+                                <button type="reset"
+                                    class="ladda-button submit glyphicon glyphicon-remove reset">&nbsp;CLEAR</button>
                                 <!-- <button type="submit" value="submit" class="ladda-button submit send_email" data-color="green" data-style="expand-left">
                                     SEND MESSAGE</button> -->
 
@@ -158,9 +158,10 @@
                                     <button class="ladda-button submit send_email" data-color="green"
                                         data-style="expand-left">SEND MESSAGE</button>
                                 </section> -->
-                                <button class="ladda-button submit send_email">
-                                    <i class="glyphicon glyphicon-envelope"></i>&nbsp;Send</button>
-
+                                <section class="button-demo" style="display: inline-block;">
+                                    <button class="glyphicon glyphicon-envelope ladda-button submit send_email" data-color="green" data-style="expand-left">&nbsp;Send</button>
+                                </section>
+                                
                             </div>
                             <!-- Customise the Thankyou Message People See when they submit the form: -->
                             <div class="thankyou_message" style="display:none;">
