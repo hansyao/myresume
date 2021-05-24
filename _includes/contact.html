@@ -22,61 +22,60 @@
                         </div>
 
                         <ul class="about">
+
                             <li>
-                                <span class=span-info>
-                                    <i class="glyphicon glyphicon-map-marker"></i>Address:
-                                </span>
+                                <label class="span-info glyphicon glyphicon-map-marker">Address:</label>
                                 <span class="value">
-
-                                    <body class="line">
-                                        {{ site.address }}
-                                    </body>
+                                    {{ site.address }}
                                 </span>
-                                <!-- <div class="clear"></div> -->
+                                <div class="clear"></div>
                             </li>
 
                             <li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i> Email:</span>
-
-                                <body class="line">
+                                <label class="span-info glyphicon glyphicon-envelope">Email:</label>
+                                <span class="value">
                                     {{ site.email }}
-                                </body>
-                            </li>
-
-                            <li><span class="span-info"><i class="glyphicon glyphicon-phone"></i> Phone:</span>
-
-                                <body class="line">
-                                    {{ site.phone }}
-                                </body>
-                            </li>
-                            <li>
-                                <span class="span-info">
-                                    <i class="glyphicon glyphicon-globe"></i> Website:
                                 </span>
+                                <div class="clear"></div>
+                            </li>
+
+                            <li><label class="span-info glyphicon glyphicon-phone">Phone:</label>
+                                <span class="value">
+                                    {{ site.phone }}
+                                </span>
+                                <div class="clear"></div>
+                            </li>
+
+                            <li>
+                                <label class="span-info glyphicon glyphicon-globe">Website:</label>
                                 <a href="{{site.url$baseurl}}">
-
-                                    <body class="line">
+                                    <span class="line">
                                         {{ site.url }}{{ site.baseurl }}
-                                    </body>
+                                    </span>
                                 </a>
+                                <div class="clear"></div>
                             </li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-comment"></i> Skype:</span>
 
-                                <body class="line">
+                            <li><span class="span-info glyphicon glyphicon-comment">Skype:</span>
+
+                                <span class="value">
                                     {{ site.skype }}
-                                </body>
+                                </span>
+                                <div class="clear"></div>
                             </li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-thumbs-up"></i> G. Drive:</span>
+                            <li><span class="span-info glyphicon glyphicon-thumbs-up">G.Drive:</span>
 
-                                <body class="line">
+                                <span class="value">
                                     {{ site.gdrive }}
-                                </body>
+                                </span>
+                                <div class="clear"></div>
                             </li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-unchecked"></i> Skydrive:</span>
+                            <li><span class="span-info glyphicon glyphicon-unchecked">Skydrive:</span>
 
-                                <body class="line">
+                                <span class="value">
                                     {{ site.skydrive }}
-                                </body>
+                                </span>
+                                <div class="clear"></div>
                             </li>
                         </ul>
                     </div>
@@ -148,7 +147,8 @@
                                         spam bot.</label>
                                     <input id="honeypot" type="text" name="honeypot" class="form-control" value="" />
                                 </p>
-                                <button type="reset" class="ladda-button submit"><i class="glyphicon glyphicon-remove"></i>&nbsp;CLEAR</button>
+                                <button type="reset" class="ladda-button submit"><i
+                                        class="glyphicon glyphicon-remove"></i>&nbsp;CLEAR</button>
                                 <!-- <button type="submit" value="submit" class="ladda-button submit send_email" data-color="green" data-style="expand-left">
                                     SEND MESSAGE</button> -->
 
