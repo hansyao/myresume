@@ -149,6 +149,7 @@
 
 .mCustomScrollBox {
     -ms-touch-action: none;
+    touch-action: none;
 }
 
 .mCustomScrollBox>.mCSB_scrollTools {

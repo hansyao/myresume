@@ -629,12 +629,14 @@ h2.resp-accordion:hover {
 #contactform .submit:hover,
 #comment_form .submit:hover {
     -webkit-filter: brightness(98%) !important;
+    filter: brightness(98%);
 }
 
 #contactform .reset:hover,
 #comment_form .reset:hover {
     background-color: #666;
     -webkit-filter: brightness(98%);
+    filter: brightness(98%);
 }
 
 #contactform .reset,

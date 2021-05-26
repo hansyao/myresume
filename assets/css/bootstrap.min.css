@@ -39,7 +39,8 @@ template {
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%
 }
 
 body {
@@ -3739,7 +3740,9 @@ input[type="button"].btn-block {
     border-radius: 4px;
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-    background-clip: padding-box
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box
+
 }
 
 .dropdown-menu.pull-right {
@@ -6216,7 +6219,8 @@ button.close {
     outline: 0;
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-    background-clip: padding-box
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box
 }
 
 .modal-backdrop {
@@ -6441,7 +6445,8 @@ button.close {
     border-radius: 6px;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    background-clip: padding-box
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box
 }
 
 .popover.top {
@@ -6828,6 +6833,10 @@ button.close {
 }
 
 @-ms-viewport {
+    width: device-width
+}
+
+@viewport {
     width: device-width
 }
 
