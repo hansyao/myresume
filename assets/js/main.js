@@ -317,7 +317,7 @@ jQuery(document).ready(function ($) {
             title: 'Marker with InfoWindow',
             icon: 'https://cdn.jsdelivr.net/gh/hansyao/image-hosting@master/20210520/image.40nrz6phtdg0.png',
             infoWindow: {
-                content: '<p>Pudong, Shanghai, China</p>'
+                content: '<p>Hans Yao</p>'
             }
         });
     }
